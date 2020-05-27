@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    <title>Vue.js Academind</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11" defer></script>
+	<script src="app.js" defer></script>
+	<title>Vue.js Academind</title>
 </head>
+
 <body>
-    
+	<div id="app">
+		<input type="text" v-on:input="changeMessage">
+		<p>{{ message }} - <a v-once v-bind:href="link">{{message}}</a></p>
+        <hr>
+        <p v-html="completeLink"></p>
+	</div>
 </body>
+
 </html>
