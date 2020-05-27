@@ -16,6 +16,10 @@
 		<p>{{ message }} - <a v-once v-bind:href="link">{{message}}</a></p>
         <hr>
         <p v-html="completeLink"></p>
+        <button v-on:click="btnInc">+</button>
+        <button v-on:click="() => this.counter -= 1">-</button>
+        <p>{{ counter }}</p>
+        <p v-on:mousemove="updateCoordinates">Coordinates {{ x }}/{{ y }}</p>
 	</div>
 </body>
 

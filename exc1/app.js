@@ -10,7 +10,7 @@ new Vue({
             return this.age * 3;
         },
         random: function() {
-            return Math.random();
+            return Math.random() * 100;
         }
     }
 });
