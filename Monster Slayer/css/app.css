@@ -92,3 +92,13 @@ button {
 #give-up:hover {
     background-color: #c7c7c7;
 }
+
+.player-action {
+    background-color: blue;
+    color: silver;
+}
+
+.monster-action {
+    background-color: brown;
+    color: silver;
+}
